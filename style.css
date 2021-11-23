@@ -19,18 +19,23 @@ body {
 }
 .input-container{
   background-color: rgba(57, 68, 92, 0.8);
-  max-width: 100%;
-  margin-left: 600px;
-  margin-right: 600px;
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto; 
   border-radius: 5px 5px;
-  float:right;
-}
+  text-align: center;
+  width: 40%;
+  padding: 0.5em;
+  }
 .inputs{
   height: 30px;
   width: 600px;
   border-radius: 4px;
   font-family: 'Poppins';
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .margin-left{
@@ -39,8 +44,8 @@ body {
   margin-top: 0px;
 }
 .margin-bottom{
-  margin-bottom: 5px;
-}
+  margin-top: 10px;
+} 
 
 
 /* Need to think of this as a layer rather than forgetting about it
