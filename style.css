@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  font-family: 'Poppins' !important;
+  font-weight: 200 !important;
+  color: white;
+
+}
+.header-text{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.header-text h1{
+  margin-bottom: 0px;
+}
+.header-text p{
+  margin-top: 0px;
+}
+.input-container{
+  background-color: rgba(57, 68, 92, 0.8);
+  max-width: 100%;
+  margin-left: 600px;
+  margin-right: 600px;
+  border-radius: 5px 5px;
+  float:right;
+}
+.inputs{
+  height: 30px;
+  width: 600px;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  margin: 0px;
+
+}
+.margin-left{
+  text-align: left;
+  margin: 50px;
+  margin-top: 0px;
+}
+.margin-bottom{
+  margin-bottom: 5px;
+}
+
+
+/* Need to think of this as a layer rather than forgetting about it
+before means it add this stuff before the text or before the tag. I guess
+you can say that. */
+body::before{
+content: '';
+  position: fixed;/*need this to stay stil soo we can scoll all the other
+  content */
+  top: 0; /*if we dont put this top and left it will atuo margin for us */
+  left: 0;
+  height: 100%; /* need it to fit the screen a 100% */
+  width: 100%;
+  z-index: -1; /* this allows us to send it to the back and write text over it */
+  /* background: var(--color-darkblue);  not to sure what this means should
+  go over this later. (more advanced)*/
+  background-image:  linear-gradient( /*why would we need the linear gradient? */
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("WP_20131026_007.jpg");
+  background-size: cover; /* without this it would not cover the screen. */
+  /* background-repeat: no-repeat; */
+
+}
+.hidden{
+  color: lightgray;
+}
